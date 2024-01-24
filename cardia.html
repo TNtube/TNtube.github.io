@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Cardia Studio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html">Home</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/TNtube" target="_blank">github</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact me</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto position-relative">
+                    <div class="post-heading">
+                        <h1>Cardia Engine</h1>
+                        <h2 class="subheading"><strong>An usable C++ game engine using python as its scripting language</strong></h2><span class="meta"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <p>With the aim of discovering a new aspect of the developer's profession, for which I am now in love, and to challenge myself, I decided in the summer of 2021 to embark on the design and realization of a game engine in C++.<br>Not wanting to make just another engine, I decided to integrate a language that was close to my heart: Python.</p>
+                    <h2 class="section-heading">Starting blocks</h2>
+                    <p>And so began the development of my biggest project to date. Drawing inspiration from sources such as The Cherno series, and books such as Game Programming Pattern, I made the initial decision to render with OpenGL. As the API has a lot of resources available, it was easy to learn how to use it.</p>
+                    <p>But as time went by, the architectural backwardness of OpenGL in recent years became more and more apparent, and the lack of control over the rendering pipeline it provided began to cause problems. So the decision was made to change the entire rendering API from OpenGL to Vulkan. The learning curve was much harder, but not impossible. Today, the engine is capable of rendering static scenes using techniques such as Physically Based Rendering.</p>
+                    <h2 class="section-heading">Entities, entities everywhere</h2>
+                    <p>Always with this learning objective in mind, and with a desire to learn new ways of developing, I looked into Entity-Component-Systems, using the famous Entt library. By taking advantage of this way of organizing data, a world of advantages opened up for me. Favoring composition over inheritance has saved me from architectural knots on numerous occasions. The use of systems has also proved extremely useful in terms of rendering.</p>
+                    <p>It's very easy to iterate through all the transforms and models of the entities present to display them. Multiple passes are child's play, consuming very few cycles thanks to the use of CPU cache. Thinking in terms of data instead of objects was a great help, and I think I'll direct much of the rest of the development with this in mind.</p>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="mb-0"></p>
+                        </blockquote>
+                    </figure>
+                    <p></p>
+                    <h2 class="section-heading">What about scripting ?</h2>
+                    <p>Next came the subject of scripting. Using C++ for its omnipresence in the field and my desire to improve with this language, I could hardly choose to impose this language on potential users. So, in keeping with my love of Python, I decided to implement its use with the existing entity system</p><a href="#"></a>
+                    <p>Although still very superficial, it is already possible to use this system in real cases, with certain features such as asynchronous function execution in the gameloop's context.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"></li>
+                        <li class="list-inline-item"></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                    </ul>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Stanis KAPUSTA 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
+</body>
+
+</html>
